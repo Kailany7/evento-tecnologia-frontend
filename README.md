@@ -74,7 +74,7 @@ Criar uma página web que apresente o evento TechConnect 2025, com informações
 
 ## 👩‍💻 Integrantes do Grupo
 
-- Kailany [@seuGitHub](https://github.com/seuGitHub)
+- Kailany [@Kailany7](https://github.com/Kailany7)
 - Nome do integrante 2 [@usuario2](https://github.com/usuario2)
 - Nome do integrante 3 [@usuario3](https://github.com/usuario3)
 
