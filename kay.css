@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Share+Tech+Mono&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #e4e4ff;
+  color: #050315;
+
+}
+
+.programacao {
+  font-family: 'Share Tech Mono', monospace; /* Ver fonte  */
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+  color: #ffffff;
+  border-radius: 12px;
+}
+
+.programacao h2 {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 2.2em;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #9032f3;
+  text-shadow: 0 0 2px #9032f3, 0 0 16px #9032f3; /* Efeito de brilho */
+  border-bottom: 2px solid #9032f3;
+  padding-bottom: 10px;
+}
+
+
+.programacao ul {
+  list-style: none; /* Remove os marcadores padrão (as bolinhas ao início da lista */
+  padding: 0;
+}
+
+.programacao ul li {
+  background: #0c248d;
+  margin: 15px 0;
+  padding: 15px 20px;
+  border-left: 5px solid #9032f3;
+  border-radius: 8px;
+  font-size: 1.1em;
+  box-shadow: 0 0 10px #9032f3;
+  transition: all 0.3s ease;
+}
+
+
+.programacao ul li:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px #9032f3, 0 0 30px #9032f3;
+}
+
+
+.programacao ul li strong { /* Destaque para o horário */
+  color: #9032f3;
+  font-family: 'Share Tech Mono', monospace;
+  font-weight: bold;
+  margin-right: 8px;
+}

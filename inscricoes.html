@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechConnect 2025 - Início</title>
+  <link rel="stylesheet" href="kay.css">
+</head>
+<body>
+  <header>
+    <img src="assets/imageLogoBanner.jpeg" alt="Banner TechConnect 2025" height="300px">
+    <h1>TechConnect 2025</h1>
+    <h3><em>Conectando ideias, criando o futuro</em></h3>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre o evento</a></li>
+        <li><a href="programacao.html">Programação</a></li>
+        <li><a href="palestrantes.html">Palestrantes</a></li>
+        <li><a href="inscricoes.html">Inscrições</a></li>
+        <li><a href="contatos.html">Contatos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2> Inscrições </h2>
+
+            <!-- Formulário -->
+            <!-- Confirmação antes do envio do forms-->
+            <form onsubmit="return confirm('Deseja realmente enviar o formulário?')">
+                <fieldset>
+                    <legend>Completa suas informações: </legend>
+                    <div>
+                        <!-- Solicita nome e email -->
+                        <label>Nome: </label>
+                        <input type="text" name="nome" id="nome">
+                    </div>
+                    <div>
+                        <label>Email: </label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                </fieldset>
+                
+                <!-- Botão para envio do forms e direciona para o inicio da página -->
+                <button type="submit" onclick="window.location.href='#comecoDaPagina'">Enviar</button>
+
+            </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 TechConnect. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
