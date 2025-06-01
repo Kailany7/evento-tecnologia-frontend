@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Share+Tech+Mono&display=swap');
-
+* {
+  box-sizing: border-box;
+}
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -8,13 +10,16 @@ body {
 
 }
 
+
+/**** pagina da programação do eventos ****/
+
 .programacao {
   font-family: 'Share Tech Mono', monospace; /* Ver fonte  */
-  padding: 40px 20px;
-  max-width: 800px;
+  padding: 5rem; /*rem permite que o tamanho seja responsivo */
   margin: auto;
   color: #ffffff;
-  border-radius: 12px;
+  background-color: transparent;
+  
 }
 
 .programacao h2 {
@@ -31,7 +36,7 @@ body {
 
 .programacao ul {
   list-style: none; /* Remove os marcadores padrão (as bolinhas ao início da lista */
-  padding: 0;
+  padding: 0rem;
 }
 
 .programacao ul li {
@@ -55,8 +60,88 @@ body {
 .programacao ul li strong { /* Destaque para o horário */
   color: #9032f3;
   font-family: 'Share Tech Mono', monospace;
-  font-weight: bold;
   margin-right: 8px;
 }
+/**** fim da estilização da programação de eventos ****/
 
-/* só para da commit do css*/
+/**** Pagina de palestrantes tabela ****/
+.palestrantes {
+   font-family: 'Share Tech Mono', monospace; /* Ver fonte  */
+  padding: 5rem;
+  margin: auto;
+  color: #ffffff;
+  background-color: transparent;
+  
+  
+ 
+}
+
+.palestrantes h2 {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 2.2em;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #9032f3;
+  text-shadow: 0 0 2px #9032f3, 0 0 16px #9032f3; /* Efeito de brilho */
+  border-bottom: 2px solid #9032f3;
+  padding-bottom: 10px;
+}
+
+.card-container {
+  display: flex; /* Flexbox para organizar os cards */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background: #0c248d;
+  border: 2px solid #9032f3;
+  border-radius: 12px;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(144, 50, 243, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px #9032f3, 0 0 30px #9032f3;
+}
+
+.card img {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  box-shadow: 0 0 10px rgba(144, 50, 243, 0.4);
+}
+
+.card h3 {
+  font-family: 'Share Tech Mono', monospace;
+  color: #9032f3;
+  margin: 10px 0;
+
+}
+
+.card p {
+  font-size: 0.95em;
+  margin: 8px 0;
+}
+
+
+.links a {
+  display: inline-block;
+  margin: 5px 10px;
+  color: #9032f3;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.links a:hover {
+  color: #1e0a8b;
+  text-shadow: 0 0 5px #9032f3;
+}
+
+

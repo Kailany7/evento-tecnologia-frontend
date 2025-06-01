@@ -6,6 +6,13 @@
   <title>TechConnect 2025 - Início</title>
   <link rel="stylesheet" href="kay.css">
 </head>
+ <style>
+      abbr {
+        text-decoration: none;
+        border-bottom: none;
+        cursor: default;
+      }
+    </style>
 <body>
   <header>
     <img src="assets/imageLogoBanner.jpeg" alt="Banner TechConnect 2025" height="300px">
@@ -22,87 +29,55 @@
       </ul>
     </nav>
   </header>
+<!-- Troca da tabela por cards -->
+  <main class="palestrantes">
+  <section>
+    <h2>Palestrantes</h2>
+    <div class="card-container">
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="./assets/imageIAMaria.png" alt="Maria Gabriela">
+        <h3>Maria Gabriela</h3>
+        <p><strong>Tema:</strong> <abbr title="Inteligência artificial">IA</abbr> na Educação</p>
+        <p >
+          Especialista em tecnologias educacionais, Maria desenvolve soluções com IA para escolas públicas.
+        </p>
+        <div class="links">
+          <a href="https://www.instagram.com/">Instagram</a>
+          <a href="https://www.linkedin.com/">LinkedIn</a>
+        </div>
+      </div>
 
-  <main>
-    <section>
-        <h2>Palestrantes</h3>
-        <table border="1">
-          <therad>
-            <tr>
-              <th>Fotos</th>
-              <th>Nome</th>
-              <th>Tema da Palestra</th>
-              <th>Minibiografia</th>
-              <th>Contatos</th>
-            </tr>
-          </therad>
-          <tbody>
-            <tr>
-              <td>
-                <img
-                  src="./assets/imageIAMaria.png"
-                  alt="foto da palestrante Maria Gabriela"
-                  width="100"
-                />
-              </td>
-              <td>Maria Gabriela</td>
-              <td>
-                <abbr title="Inteligência artificial"> IA </abbr> na Educação
-              </td>
-              <td>
-                Especialista em tecnologias educacionais, Maria desenvolve
-                soluções baseadas em
-                <abbr title="Inteligência artificial"> IA </abbr> para melhorar
-                o aprendizado em escolas públicas.
-              </td>
-              <td>
-                <a href="https://www.instagram.com/">@mariagabriela</a><br>
-                <a href="https://www.linkedin.com/">LinkedIn</a>
-              </td>
-            </tr>
+      <!-- Card 2 -->
+      <div class="card">
+        <img src="./assets/imageIACarlos.png" alt="Carlos Moura">
+        <h3>Carlos Moura</h3>
+        <p><strong>Tema:</strong> Startups Sustentáveis</p>
+        <p >
+          Fundador da GreenTech, Carlos atua com inovação voltada à sustentabilidade.
+        </p>
+        <div class="links">
+          <a href="https://www.instagram.com/">Instagram</a>
+          <a href="https://www.linkedin.com/">LinkedIn</a>
+        </div>
+      </div>
 
-            <tr>
-              <td>
-                <img
-                  src="./assets/imageIACarlos.png"
-                  alt="foto do palestrante Carlos"
-                  width="100"
-                />
-              </td>
-              <td>Carlos Moura</td>
-              <td>Startups Sustentáveis</td>
-              <td>
-                Empreendedor e fundador da GreenTech, Carlos atua com inovação
-                voltada à sustentabilidade no setor de tecnologia.
-              </td>
-              <td>
-                <a href="https://www.instagram.com/">@carlosmoura</a><br>
-                <a href="https://www.linkedin.com/">LinkedIn</a>
-              </td>
-            </tr>
-
-            <tr>
-              <td>
-                <img
-                  src="./assets/imageIAManuela.png"
-                  alt="foto da palestrante Emanuela Andrade"
-                  width="100"
-                />
-              </td>
-              <td>Emanuela Andrade</td>
-              <td>Desenvolvimento Web</td>
-              <td>
-                Emanuela é desenvolvedora front-end e instrutora, conhecida por
-                suas abordagens práticas e envolventes em web design responsivo.
-              </td>
-              <td>
-                <a href="https://www.instagram.com/">@emanuelaandrade</a><br>
-                <a href="https://www.linkedin.com/">LinkedIn</a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-  </main>
+      <!-- Card 3 -->
+      <div class="card">
+        <img src="./assets/imageIAManuela.png" alt="Emanuela Andrade">
+        <h3>Emanuela Andrade</h3>
+        <p><strong>Tema:</strong> Desenvolvimento Web</p>
+        <p>
+          Desenvolvedora front-end e instrutora de web design responsivo e prático.
+        </p>
+        <div class="links">
+          <a href="https://www.instagram.com/">Instagram</a>
+          <a href="https://www.linkedin.com/">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
 
   <footer>
     <p>&copy; 2025 TechConnect. Todos os direitos reservados.</p>
