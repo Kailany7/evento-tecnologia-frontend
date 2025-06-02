@@ -1,23 +1,32 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Share+Tech+Mono&display=swap');
+
+:root {  /* Usando root para as Cores principais */
+  --roxo: #9032f3;
+  --azul-escuro: #1e0a8b;
+  --fundo-claro: #fdfdff;
+  --sombra-light: rgba(144, 50, 243, 0.1);
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background: #fdfdff;
+  background: var(--fundo-claro);
   color: #050315;
-
 }
 
-
-
+/* Títulos globais */
 h2 {
   font-family: 'Share Tech Mono', monospace;
-  color: #9032f3;
+  color: var(--roxo);
 }
 
-/**** pagina inicial ****/
+
+/***     PÁGINA INICIAL - APRESENTAÇÃO DO EVENTO     ***/
+
 
 .sobre-evento {
   max-width: 1000px;
@@ -25,27 +34,27 @@ h2 {
   padding: 3rem 2rem;
   font-family: 'Montserrat', sans-serif;
   line-height: 1.7;
-  border: 2px solid #9032f3;
+  border: 2px solid var(--roxo);
   border-radius: 12px;
 }
 
 .apresentacao-evento h2 {
   font-family: 'Share Tech Mono', monospace;
   font-size: 2rem;
-  color: #9032f3;
   margin-bottom: 1rem;
-  text-shadow: 0 0 5px #9032f3;
+  color: var(--roxo);
+  text-shadow: 0 0 5px var(--roxo);
 }
 
 .apresentacao-evento h2 span {
-  color: #1e0a8b;
+  color: var(--azul-escuro);
 }
 
 .intro-texto p {
   margin-bottom: 1rem;
- 
 }
 
+/* Cards informativos de horário/local/duração */
 .evento-info-card {
   display: flex;
   flex-wrap: wrap;
@@ -56,25 +65,25 @@ h2 {
 
 .info-item {
   background-color: #f4f4fa;
-  border-left: 4px solid #9032f3;
+  border-left: 4px solid var(--roxo);
   padding: 1rem;
   width: 180px;
   text-align: center;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(144, 50, 243, 0.1);
+  box-shadow: 0 0 10px var(--sombra-light);
   transition: all 0.3s ease;
 }
 
 .info-item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 15px #9032f3;
+  box-shadow: 0 0 15px var(--roxo);
 }
 
 .info-icon {
   font-size: 2rem;
   display: block;
   margin-bottom: 0.5rem;
-  color: #9032f3;
+  color: var(--roxo);
 }
 
 .objetivos-lista ul {
@@ -88,92 +97,90 @@ h2 {
 }
 
 .objetivos-lista ul li::marker {
-  color: #9032f3;
+  color: var(--roxo);
 }
 
 
-/**** pagina da programação do eventos ****/
+/****      PAGINA DA PROGRAMAÇÃO DO EVENTO               ****/
+
 
 .programacao {
-  font-family: 'Share Tech Mono', monospace; /* Ver fonte  */
+  font-family: 'Share Tech Mono', monospace; /*OBS: VER A FONTE*/
   padding: 5rem; /*rem permite que o tamanho seja responsivo */
   margin: auto;
   color: #ffffff;
   background-color: transparent;
-  
 }
 
 .programacao h2 {
-  font-family: 'Share Tech Mono', monospace;
   font-size: 2.2em;
   margin-bottom: 30px;
   text-align: center;
-  text-shadow: 0 0 2px #9032f3, 0 0 16px #9032f3; /* Efeito de brilho */
-  border-bottom: 2px solid #9032f3;
+  text-shadow: 0 0 2px var(--roxo), 0 0 16px var(--roxo); /* Efeito de brilho */
+  border-bottom: 2px solid var(--roxo);
   padding-bottom: 10px;
 }
 
-
 .programacao ul {
-  list-style: none; /* Remove os marcadores padrão (as bolinhas ao início da lista */
-  padding: 0rem;
+  list-style: none;  /* Remove os marcadores padrão (as bolinhas ao início da lista */
+  padding: 0;
 }
 
 .programacao ul li {
   background: #0c248d;
   margin: 15px 0;
   padding: 15px 20px;
-  border-left: 5px solid #9032f3;
+  border-left: 5px solid var(--roxo);
   border-radius: 8px;
   font-size: 1.1em;
-  box-shadow: 0 0 10px #9032f3;
+  box-shadow: 0 0 10px var(--roxo);
   transition: all 0.3s ease;
 }
 
-
 .programacao ul li:hover {
   transform: scale(1.02);
-  box-shadow: 0 0 20px #9032f3, 0 0 30px #9032f3;
+  box-shadow: 0 0 20px var(--roxo), 0 0 30px var(--roxo);
 }
 
-
-.programacao ul li strong { /* Destaque para o horário */
-  color: #9032f3;
+.programacao ul li strong {  /* Destaque para o horário */
+  color: var(--roxo);
   font-family: 'Share Tech Mono', monospace;
   margin-right: 8px;
 }
-/**** fim da estilização da programação de eventos ****/
 
-/**** Pagina de palestrantes tabela ****/
+
+/****    PAGINA DE PALESTRANTES          ****/
+
+
 .palestrantes {
-  font-family: 'Share Tech Mono', monospace; /* Ver fonte  */
+  font-family: 'Share Tech Mono', monospace; /*OBS: VER A FONTE*/
   padding: 5rem;
   margin: auto;
   color: #ffffff;
   background-color: transparent;
-  
 }
 
 .palestrantes h2 {
-  font-family: 'Share Tech Mono', monospace;
   font-size: 2.2em;
   margin-bottom: 30px;
   text-align: center;
-  text-shadow: 0 0 2px #9032f3, 0 0 16px #9032f3; /* Efeito de brilho */
-  border-bottom: 2px solid #9032f3;
+  text-shadow: 0 0 2px var(--roxo), 0 0 16px var(--roxo); /* Efeito de brilho */
+  border-bottom: 2px solid var(--roxo);
   padding-bottom: 10px;
 }
 
+/* Container de cards */
 .card-container {
-  display: flex; /* Flexbox para organizar os cards */
-  flex-wrap: wrap; /* Permite que os cards se movam para a próxima linha se não houver espaço suficiente */
-  justify-content: center; /* Centraliza os cards */
+  display: flex;  /* Flexbox para organizar os cards */
+  flex-wrap: wrap; /* Permite que os cards se movam para a próxima linha se não houver espaço suficiente*/
+  justify-content: center; /* Centraliza os cards  */
   gap: 30px;
 }
 
+/* Card individual */
 .card {
   background: #0c248d;
-  border: 2px solid #9032f3;
+  border: 2px solid var(--roxo);
   border-radius: 12px;
   width: 300px;
   padding: 20px;
@@ -184,7 +191,7 @@ h2 {
 
 .card:hover {
   transform: scale(1.02);
-  box-shadow: 0 0 20px #9032f3;
+  box-shadow: 0 0 20px var(--roxo);
 }
 
 .card img {
@@ -196,9 +203,8 @@ h2 {
 
 .card h3 {
   font-family: 'Share Tech Mono', monospace;
-  color: #9032f3;
+  color: var(--roxo);
   margin: 10px 0;
-
 }
 
 .card p {
@@ -206,19 +212,17 @@ h2 {
   margin: 8px 0;
 }
 
-
+/* Links sociais */
 .links a {
   display: inline-block;
   margin: 5px 10px;
-  color: #9032f3;
+  color: var(--roxo);
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s, text-shadow 0.3s;
 }
 
 .links a:hover {
-  color: #1e0a8b;
-  text-shadow: 0 0 5px #9032f3;
+  color: var(--azul-escuro);
+  text-shadow: 0 0 5px var(--roxo);
 }
-
-
