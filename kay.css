@@ -29,9 +29,10 @@ h2 {
 
 
 .sobre-evento {
-  max-width: 1000px;
-  margin: auto;
-  padding: 3rem 2rem;
+  width: 95%; /* largura responsiva */
+  max-width: 1300px; 
+  margin: 2rem auto;
+  padding: 3rem;
   font-family: 'Montserrat', sans-serif;
   line-height: 1.7;
   border: 2px solid var(--roxo);
@@ -98,6 +99,46 @@ h2 {
 
 .objetivos-lista ul li::marker {
   color: var(--roxo);
+}
+
+/*galeria de imagens do evento*/
+.galeria-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* centraliza no meio */
+  gap: 16px; /* espaço entre as imagens */
+  max-width: 9000px;
+  margin: 2rem auto;
+}
+
+.galeria-itens {
+  width: 100%; /* largura total do item */
+  max-width: 260px; 
+  background: #0c248d; /* Cor de fundo dos itens */
+  border-radius: 10px;
+  overflow: hidden; /* impede que a iamgem transborde */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+
+}
+
+.galeria-itens img {
+  width: 100%;
+  height: auto;
+  display: block;
+  
+}
+
+.galeria-itens:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(144, 50, 243, 0.25);
+}
+
+.galeria-itens figcaption {
+  padding: 0.75rem;
+  font-size: 0.95rem;
+  color: #ffffff;
+  background: none;
+  font-family: 'Share Tech Mono', monospace;
 }
 
 
