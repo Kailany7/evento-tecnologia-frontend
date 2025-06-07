@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Share+Tech+Mono&display=swap');
+
+/* HEADER */
+
+header {
+    background-color: #e4e4ff;
+    font-family: 'Share Tech Mono', monospace;
+    box-shadow: 0 4px 30px black;
+    border-radius: 30px;
+}
+
+.cabeca h1, h3 {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/* MENU DE NAVEGAÇÃO */
+
+.menu {
+    font-family: 'Share Tech Mono', monospace;
+    list-style: circle;
+}
+
+.menu li {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.menu li a:hover {
+    color: #1e1e2f;
+}
+
+/* RODAPÉ */
+
+footer {
+    color: rgb(98, 95, 95);
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Share Tech Mono', monospace;
+    background-color: rgb(203, 200, 200);
+}
+
+.quadrado-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.lista-footer {
+    flex: 1 1 300px;
+    min-width: 250px;
+    max-width: 33%;
+}
+
+.lista-footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-footer a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.lista-footer a:hover {
+    text-decoration: underline;
+}
