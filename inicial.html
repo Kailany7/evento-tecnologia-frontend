@@ -7,10 +7,12 @@
   <link rel="stylesheet" href="kay.css" />
   <link rel="stylesheet" href="lara.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 
 <body>
   <nav>
+    <button id="toggle-dark-mode">🌙 Alternar Modo</button>
       <ul class="menu">
         <li><a href="inicial.html">Início</a></li>
         <li><a href="programacao.html">Programação</a></li>
@@ -21,7 +23,7 @@
     </nav>
   <header class="cabeca">
     <img class="logotipo" src="assets/imageLogoBanner.jpeg" alt="Banner TechConnect 2025" height="300px">
-    <div class="topo">
+    <div class="top">
       <h1 id="h1">TechConnect 2025</h1>
       <h3 id="h3"><em>Conectando ideias, criando o futuro</em></h3>
     </div>
@@ -127,11 +129,48 @@
 
     </main>
 
+  <section id="patrocinadores">
+    
+    <h2 id="patro-h2">PATROCINADORES</h2>
+
+    <figure class="galeria-patrocinadores">
+      <a href="assets/nebulacore.png" target="_blank">
+          <img src="assets/nebulacore.png" alt="Patrocinador do evento - NebulaCore" />NebulaCore
+      </a>
+    </figure>
+    <figure class="galeria-patrocinadores">
+      <a href="assets/finqubit.png" target="_blank">
+          <img src="assets/finqubit.png" alt="Patrocinador do evento - Finqubit" />Finqubit
+      </a>
+    </figure>
+    <figure class="galeria-patrocinadores">
+      <a href="assets/synaptech.png" target="_blank">
+          <img src="assets/synaptech.png" alt="Patrocinador do evento - Finqubit" />Synaptech
+      </a>
+    </figure>
+    <figure class="galeria-patrocinadores">
+      <a href="assets/ecovolt.png" target="_blank">
+          <img src="assets/ecovolt.png" alt="Patrocinador do evento - Finqubit" />EcoVolt
+      </a>
+    </figure>
+    <figure class="galeria-patrocinadores">
+      <a href="assets/quantumpulse.png" target="_blank">
+          <img src="assets/quantumpulse.png" alt="Patrocinador do evento - Finqubit" />QuantumPulse
+      </a>
+    </figure>
+    <figure class="galeria-patrocinadores">
+      <a href="assets/zeropoint.png" target="_blank">
+          <img src="assets/zeropoint.png" alt="Patrocinador do evento - Finqubit" />ZeroPoint Cyber
+      </a>
+    </figure>
+
+  </section>
+
   <footer>
     <div class="quadrado-footer">
                 <!-- Rodapé com agradecimento, -->
                 <p>Agradecemos à professora Luciana Lunguinho pela orientação durante o desenvolvimento deste projeto,
-                    que nos permitiu aplicar na prática os conhecimentos de HTML e trabalho em equipe.
+                    que nos permitiu aplicar na prática os conhecimentos de HTML, CSS e trabalho em equipe.
                     Este foi um passo importante na nossa jornada como futuras profissionais.</p>
                 <!-- Integrantes do grupo -->
                 <div class="lista-footer">
@@ -151,6 +190,6 @@
                 </p>
     </div>
   </footer>
-
+  <script src="modoescuro.js"></script>
 </body>
 </html>

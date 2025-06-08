@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Share+Tech+Mono&display=swap');
 
+body {
+    background-color: #e4e4ff;
+}
 /* HEADER */
 
 header {
@@ -10,10 +13,11 @@ header {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 30px;
-    margin-left: 100px;
-    margin-right: 100px;
+    width: 95%; /* largura responsiva */
+    max-width: 1300px; 
     border: 2px solid var(--roxo);
+    margin: 1rem auto;
+    padding: 0rem;
     border-radius: 12px;
 }
 
@@ -42,9 +46,9 @@ header {
 .menu {
     font-family: 'Share Tech Mono', monospace;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 200px;
     list-style: none;
     background-color: #9032f3;
     border-radius: 5px;
@@ -61,6 +65,47 @@ header {
 
 .menu li a:hover {
     color: #1e1e2f;
+}
+
+/* PATROCINADORES */
+
+#patrocinadores {
+    width: 95%; /* largura responsiva */
+    max-width: 1300px; 
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Share Tech Mono', monospace;
+    font-style: italic;
+    font-size: 12px;
+    padding: 40px 40px;
+    border: 2px solid #9032f3;
+    border-radius: 12px;
+    margin: 2rem auto;
+    padding: 3rem;
+}
+
+#patro-h2 {
+    text-shadow: 0 0 5px var(--roxo);
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.galeria-patrocinadores {
+  width: 100%; /* largura total do item */
+  max-width: 260px; 
+  border-radius: 10px;
+  text-align: center;
+  overflow: hidden; /* impede que a imagem transborde */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.galeria-patrocinadores img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* RODAPÉ */
@@ -98,4 +143,92 @@ footer {
 
 .lista-footer a:hover {
     text-decoration: underline;
+}
+
+button {
+    font-family: 'Share Tech Mono', monospace;
+    display: flex;
+    border-radius: 5px;
+    border-color: #9032f3;
+    background-color: white;
+    padding: 7px;
+    align-items: center;
+}
+
+/* 🌙 MODO ESCURO */
+:root {
+  --text-dark: #e4e4ff;
+  --background-dark: #050315;
+  --primary-dark: #9032f3;
+  --secondary-dark: #1e0a8b;
+  --accent-dark: #0c238c;
+}
+
+body.dark-mode {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+}
+
+body.dark-mode #h1, body.dark-mode h1, body.dark-mode h2, body.dark-mode #h3 {
+  color: #ffffff; /* branco puro para máximo contraste */
+  text-shadow: 0 0 8px var(--accent-dark); /* brilho suave */
+}
+
+
+body.dark-mode header {
+  background-color: var(--secondary-dark);
+  border-color: var(--primary-dark);
+}
+
+body.dark-mode .menu {
+  background-color: var(--primary-dark);
+  color: var(--text-dark);
+}
+
+body.dark-mode .menu li a:hover {
+  color: var(--accent-dark);
+}
+
+body.dark-mode footer {
+  background-color: var(--secondary-dark);
+  color: var(--text-dark);
+}
+
+body.dark-mode .lista-footer a {
+  color: var(--text-dark);
+}
+
+body.dark-mode .lista-footer a:hover {
+  color: var(--accent-dark);
+  text-decoration: underline;
+}
+
+body.dark-mode #patrocinadores {
+  border-color: var(--accent-dark);
+}
+
+body.dark-mode figcaption {
+  color: var(--text-dark);
+}
+
+#toggle-dark-mode {
+    display: flex;
+    align-items: center;
+}
+
+body.dark-mode .info-item p,
+body.dark-mode .info-item strong,
+body.dark-mode .info-icon {
+  color: #ffffff; /* branco puro para contraste */
+  text-shadow: 0 0 6px var(--accent-dark);
+}
+
+body.dark-mode .info-icon {
+  color: #ffffff;
+}
+
+body.dark-mode .info-item {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0.5rem;
+  border-radius: 8px;
 }
