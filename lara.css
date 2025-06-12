@@ -1,24 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Share+Tech+Mono&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
 body {
     background-color: #e4e4ff;
 }
 /* HEADER */
 
 header {
-    background-color: #e4e4ff;
-    font-family: 'Share Tech Mono', monospace;
-    border-radius: 30px;
-    height: 450px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 95%; /* largura responsiva */
-    max-width: 1300px; 
-    border: 2px solid var(--roxo);
-    margin: 1rem auto;
-    padding: 0rem;
-    border-radius: 12px;
+  background-color: #ededfc;
+  font-family: 'Share Tech Mono', monospace;
+  border-radius: 30px;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 95%; /* largura responsiva */
+  max-width: 1300px; 
+  border: 2px solid var(--roxo);
+  margin: 1rem auto;
+  padding: 0rem;
+  border-radius: 12px;
+}
+
+.sem-logo {
+  background-color: #ededfc;
+  font-family: 'Share Tech Mono', monospace;
+  border-radius: 30px;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 95%; /* largura responsiva */
+  max-width: 1300px; 
+  border: 2px solid var(--roxo);
+  margin: 1rem auto;
+  padding: 0rem;
+  border-radius: 12px;
 }
 
 #h1 {
@@ -48,9 +68,9 @@ header {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 200px;
+    gap: 150px;
     list-style: none;
-    background-color: #9032f3;
+    background-color: #1e0a8b;
     border-radius: 5px;
     margin-left: 30px;
     margin-right: 30px;
@@ -72,8 +92,23 @@ header {
     margin-bottom: 15px;
 }
 
+.menu li a {
+  color: white;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
 .menu li a:hover {
     color: #1e1e2f;
+}
+
+.card-menu {
+  margin: 1rem;
+}
+
+.img-menu img {
+    height: 20px;
+    width: auto;
 }
 
 /* PATROCINADORES */
@@ -125,6 +160,7 @@ footer {
     text-align: center;
     font-family: 'Share Tech Mono', monospace;
     background-color: rgb(203, 200, 200);
+    font-size: small;
 }
 
 .quadrado-footer {
