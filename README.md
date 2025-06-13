@@ -76,5 +76,5 @@ Criar uma página web que apresente o evento TechConnect 2025, com informações
 
 - Kailany [@Kailany7](https://github.com/Kailany7)
 - Fernanda [@fernanda_lvs](https://github.com/fernandlvs)
-- Nome do integrante 3 [@usuario3](https://github.com/usuario3)
+- Lara [@lararaffy](https://github.com/lararaffy)
 
