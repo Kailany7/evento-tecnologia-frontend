@@ -1,0 +1,102 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+/*Estilização da área das incrições*/
+
+.forms-inscricoes {
+    padding: 5rem;
+}
+
+.forms-inscricoes h2 {
+    font-size: 2.2em;
+    margin-bottom: 50px;
+    text-align: center;
+    text-shadow: 0 0 2px var(--roxo), 0 0 16px var(--roxo); /* Efeito de brilho */
+    border-bottom: 2px solid var(--roxo);
+    padding-bottom: 20px;
+}
+
+fieldset {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    border: 3px solid #9032f3;
+    text-align: center;
+    color: #9032f3;
+    margin-bottom: 0px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.nome, .email, .telefone {
+    background-color: rgb(215, 200, 245);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    color: #9032f3;
+    justify-content: center;
+    padding: 3px;
+    border: #9032f3;
+
+}
+
+input {
+    border-radius: 3px;
+    font-size: 15px;
+    width: 500px;
+    color: #9032f3;
+    background-color: #e4e4ff;
+    border-color: #9032f3;
+}
+
+#telefone {
+    width: 200px;
+}
+
+label {
+    margin-bottom: 2px;
+    color: #9032f3;
+}
+
+::placeholder {
+    color: #9032f3;
+    opacity: 30%;
+}
+
+button {
+    margin: 0 auto;
+    margin-top: 7px;
+}
+
+/*Estilização da área de contatos*/
+
+#contatos {
+    padding: 5rem;
+}
+
+#contatos p {
+  font-family: 'Share Tech Mono', monospace;
+  color: var(--roxo);
+  font-size: 2rem;
+}
+
+#contatos h2{
+    font-size: 2.2em;
+    margin-bottom: 50px;
+    text-align: center;
+    text-shadow: 0 0 2px var(--roxo), 0 0 16px var(--roxo); /* Efeito de brilho */
+    border-bottom: 2px solid var(--roxo);
+    padding-bottom: 20px;
+}
+
+li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    list-style-type: none;
+    color: #9032f3;
+}
+
+a {
+    color: rgb(98, 95, 95);
+}
+

@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Share+Tech+Mono&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #e4e4ff;
+}
+/* HEADER */
+
+header {
+  background-color: #ededfc;
+  font-family: 'Share Tech Mono', monospace;
+  border-radius: 30px;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 95%; /* largura responsiva */
+  max-width: 1300px; 
+  border: 2px solid var(--roxo);
+  margin: 1rem auto;
+  padding: 0rem;
+  border-radius: 12px;
+}
+
+.sem-logo {
+  background-color: #ededfc;
+  font-family: 'Share Tech Mono', monospace;
+  border-radius: 30px;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 95%; /* largura responsiva */
+  max-width: 1300px; 
+  border: 2px solid var(--roxo);
+  margin: 1rem auto;
+  padding: 0rem;
+  border-radius: 12px;
+}
+
+#h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #1e0a8b;
+    text-shadow: 0 0 5px var(--roxo);
+}
+
+#h3 {
+    text-align: center;
+    color: #0c238c;
+    text-shadow: 0 0 5px var(--roxo);
+}
+
+.logotipo {
+    position: absolute;
+    margin-top: 115px;
+    border-radius: 10px;
+}
+
+/* MENU DE NAVEGAÇÃO */
+
+.menu {
+    font-family: 'Share Tech Mono', monospace;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 150px;
+    list-style: none;
+    background-color: #1e0a8b;
+    border-radius: 5px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-shadow: 0 0 5px rgb(162, 156, 156);
+}
+
+.menu li {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.menu li a {
+  color: white;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+    color: #1e1e2f;
+}
+
+.card-menu {
+  margin: 1rem;
+}
+
+.img-menu img {
+    height: 20px;
+    width: auto;
+}
+
+/* PATROCINADORES */
+
+#patrocinadores {
+    width: 95%; /* largura responsiva */
+    max-width: 1300px; 
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Share Tech Mono', monospace;
+    font-style: italic;
+    font-size: 12px;
+    padding: 40px 40px;
+    border: 2px solid #9032f3;
+    border-radius: 12px;
+    margin: 2rem auto;
+    padding: 3rem;
+}
+
+#patro-h2 {
+    text-shadow: 0 0 5px var(--roxo);
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.galeria-patrocinadores {
+  width: 100%; /* largura total do item */
+  max-width: 260px; 
+  border-radius: 10px;
+  text-align: center;
+  overflow: hidden; /* impede que a imagem transborde */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.galeria-patrocinadores img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* RODAPÉ */
+
+footer {
+    color: rgb(98, 95, 95);
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Share Tech Mono', monospace;
+    background-color: rgb(203, 200, 200);
+    font-size: small;
+}
+
+.quadrado-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.lista-footer {
+    flex: 1 1 300px;
+    min-width: 250px;
+    max-width: 33%;
+}
+
+.lista-footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-footer a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.lista-footer a:hover {
+    text-decoration: underline;
+}
+
+button {
+    font-family: 'Share Tech Mono', monospace;
+    display: flex;
+    border-radius: 5px;
+    border-color: #9032f3;
+    background-color: white;
+    padding: 7px;
+    align-items: center;
+}
+
+/* 🌙 MODO ESCURO */
+:root {
+  --text-dark: #e4e4ff;
+  --background-dark: #050315;
+  --primary-dark: #9032f3;
+  --secondary-dark: #1e0a8b;
+  --accent-dark: #0c238c;
+}
+
+body.dark-mode {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+}
+
+body.dark-mode #h1, body.dark-mode h1, body.dark-mode h2, body.dark-mode #h3 {
+  color: #ffffff; /* branco puro para máximo contraste */
+  text-shadow: 0 0 8px var(--accent-dark); /* brilho suave */
+}
+
+
+body.dark-mode header {
+  background-color: var(--secondary-dark);
+  border-color: var(--primary-dark);
+}
+
+body.dark-mode .menu {
+  background-color: var(--primary-dark);
+  color: var(--text-dark);
+}
+
+body.dark-mode .menu li a:hover {
+  color: var(--accent-dark);
+}
+
+body.dark-mode footer {
+  background-color: var(--secondary-dark);
+  color: var(--text-dark);
+}
+
+body.dark-mode .lista-footer a {
+  color: var(--text-dark);
+}
+
+body.dark-mode .lista-footer a:hover {
+  color: var(--accent-dark);
+  text-decoration: underline;
+}
+
+body.dark-mode #patrocinadores {
+  border-color: var(--accent-dark);
+}
+
+body.dark-mode figcaption {
+  color: var(--text-dark);
+}
+
+#toggle-dark-mode {
+    display: flex;
+    align-items: center;
+}
+
+body.dark-mode .info-item p,
+body.dark-mode .info-item strong,
+body.dark-mode .info-icon {
+  color: #ffffff; /* branco puro para contraste */
+  text-shadow: 0 0 6px var(--accent-dark);
+}
+
+body.dark-mode .info-icon {
+  color: #ffffff;
+}
+
+body.dark-mode .info-item {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0.5rem;
+  border-radius: 8px;
+}

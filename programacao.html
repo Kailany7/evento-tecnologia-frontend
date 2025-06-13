@@ -13,22 +13,32 @@
       }
     </style>
   <link rel="stylesheet" href="kay.css">
+  <link rel="stylesheet" href="lara.css">
+  <link rel="stylesheet" href="fernanda.css">
 </head>
 <body>
-  <header>
-    <img src="assets/imageLogoBanner.jpeg" alt="Banner TechConnect 2025" height="300px">
-    <h1>TechConnect 2025</h1>
-    <h3><em>Conectando ideias, criando o futuro</em></h3>
-    <nav>
-      <ul>
+  <nav>
+    <button id="toggle-dark-mode">🌙 Alternar Modo</button>
+      <ul class="menu">
+        <li>
+            <div class="img-menu">
+                <a href="assets/imageLogoBanner.jpeg" target="_blank">
+                    <img src="assets/imageLogoBanner.jpeg" alt="Logo do site">
+                </a>
+            </div>
+        </li>
         <li><a href="inicial.html">Início</a></li>
-        <li><a href="sobre.html">Sobre o evento</a></li>
         <li><a href="programacao.html">Programação</a></li>
         <li><a href="palestrantes.html">Palestrantes</a></li>
         <li><a href="inscricoes.html">Inscrições</a></li>
         <li><a href="contatos.html">Contatos</a></li>
       </ul>
     </nav>
+  <header class="sem-logo">
+    <div>
+      <h1 id="h1">TechConnect 2025</h1>
+      <h3 id="h3"><em>Conectando ideias, criando o futuro</em></h3>
+    </div>
   </header>
     <main class ="programacao">
         <section>
@@ -47,13 +57,37 @@
             <strong>14h00</strong> - Workshop: "Startups e Tecnologia
             Sustentável"
           </li>
-        </ul
+        </ul>
         </section>
     </main>
 
 
-  <footer>
-    <p>&copy; 2025 TechConnect. Todos os direitos reservados.</p>
+<footer>
+    <div class="quadrado-footer">
+                <!-- Rodapé com agradecimento, -->
+                <p>Agradecemos à professora Luciana Lunguinho pela orientação durante o desenvolvimento deste projeto,
+                    que nos permitiu aplicar na prática os conhecimentos de HTML, CSS e trabalho em equipe.
+                    Este foi um passo importante na nossa jornada como futuras profissionais.</p>
+                <!-- Integrantes do grupo -->
+                <div class="lista-footer">
+                  <UL>
+                    <li>Fernanda Alves de Almeida <a href="mailto:fernanda.almeida@maisunifacisa.com.br">fernanda.almeida@maisunifacisa.com.br</a></li>
+                    <li>Kailany Gabriely Santos da Silva <a href="mailto:kailany.silva@maisunifacisa.com.br">kailany.silva@maisunifacisa.com.br</a></li>
+                    <li>Lara Raffaelly Rodrigues Medeiros <a href="mailto:lara.medeiros@maisunifacisa.com.br">lara.medeiros@maisunifacisa.com.br</a></li>
+                  </UL>
+                </div>
+                <!-- Ano do "evento" (projeto) e questão dos direitos. -->
+                <p>&copy; 2025 TechConnect. Todos os direitos reservados.</p>
+                <!-- Rodapé tradicional com Política de Privacidade, Termos de Uso e Contato do evento -->
+                <p class="normas">
+                    <a href="#sobreoevento">Política de Privacidade</a> |
+                    <a href="#sobreoevento">Termos de Uso</a> |
+                    <a href="mailto:contato@techconnect.com">contato@techconnect.com</a>
+                </p>
+    </div>
   </footer>
+
+  <script src="modoescuro.js"></script>
+
 </body>
 </html>

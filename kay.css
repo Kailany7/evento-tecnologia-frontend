@@ -97,7 +97,7 @@ h2 {
   position: relative;
 }
 
-.objetivos-lista ul li::marker { /* Personaliza o marcador da lista */
+.objetivos-lista ul li::marker {
   color: var(--roxo);
 }
 
@@ -129,8 +129,8 @@ h2 {
 }
 
 .galeria-itens:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 15px var(--roxo);
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(144, 50, 243, 0.25);
 }
 
 .galeria-itens figcaption {
